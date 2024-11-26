@@ -1,0 +1,74 @@
+
+[
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "description": "High-quality wireless headphones with noise cancellation.",
+      "price": 99.99,
+      "category": "electronics"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "description": "Latest model smartphone with advanced features.",
+      "price": 699.99,
+      "category": "electronics"
+    },
+    {
+      "id": 3,
+      "name": "Jeans",
+      "description": "Comfortable and stylish denim jeans.",
+      "price": 49.99,
+      "category": "clothing"
+    },
+    {
+      "id": 4,
+      "name": "T-Shirt",
+      "description": "Soft cotton t-shirt available in multiple colors.",
+      "price": 19.99,
+      "category": "clothing"
+    },
+    {
+      "id": 5,
+      "name": "Science Fiction Novel",
+      "description": "An exciting science fiction novel that explores futuristic themes.",
+      "price": 14.99,
+      "category": "books"
+    },
+    {
+      "id": 6,
+      "name": "Cookbook",
+      "description": "A comprehensive cookbook with a variety of recipes.",
+      "price": 29.99,
+      "category": "books"
+    },
+    {
+      "id": 7,
+      "name": "Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker with excellent sound quality.",
+      "price": 59.99,
+      "category": "electronics"
+    },
+    {
+      "id": 8,
+      "name": "Leather Jacket",
+      "description": "Premium leather jacket for a classic look.",
+      "price": 199.99,
+      "category": "clothing"
+    },
+    {
+      "id": 9,
+      "name": "Mystery Novel",
+      "description": "A gripping mystery novel full of unexpected twists.",
+      "price": 12.99,
+      "category": "books"
+    },
+    {
+      "id": 10,
+      "name": "Tablet",
+      "description": "Lightweight tablet with a high-resolution display.",
+      "price": 299.99,
+      "category": "electronics"
+    }
+  ]
+  

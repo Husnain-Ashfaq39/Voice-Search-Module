@@ -1,0 +1,197 @@
+.App {
+  font-family: 'Roboto', Arial, sans-serif;
+  padding: 20px;
+  height: 100%;
+  margin: 0 auto;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.App.light {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.App.dark {
+  background-color: #121212;
+  color: #f9f9f9;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.theme-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.history-container,
+.favorites-container,
+.results-container {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.history-container ul,
+.product-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-item {
+  cursor: pointer;
+  color: #007BFF;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.history-item:hover {
+  color: #0056b3;
+  transform: translateX(5px);
+}
+
+.clear-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.clear-button:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+.filter-sort-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-sort-container label {
+  margin-bottom: 10px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-item {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.favorite-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: transform 0.2s ease;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.pagination-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding:
+10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Dark mode specific styles */
+.App.dark .history-item {
+  color: #66b2ff;
+}
+
+.App.dark .clear-button {
+  background-color: #ff4d4d;
+}
+
+.App.dark .clear-button:hover {
+  background-color: #e60000;
+}
+
+.App.dark .filter-sort-container select {
+  background-color: #333;
+  color: #f9f9f9;
+  border: 1px solid #555;
+}
+
+.App.dark .product-item {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.App.dark .pagination-button {
+  background-color: #28a745;
+}
+
+.App.dark .pagination-button:hover:not(:disabled) {
+  background-color: #1e7e34;
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-sort-container {
+    flex-direction: column;
+  }
+}
+
